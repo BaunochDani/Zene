@@ -4,7 +4,7 @@ const Discord = require('discord.js');
     client = new Discord.Client(),
     config = {
         prefix: "@",
-        token: process.env.TOKEN || "ODY2NzcxOTQ0NzM1NzY4NjM2.YPXaRw.YZ6PJSg6tukHYkhMr-STcaQT550"
+        
     };
     
     
@@ -77,4 +77,4 @@ distube
         message.channel.send("An error encountered: " + e);
     });
 
-client.login(config.token);
+client.login(process.env.token);
